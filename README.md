@@ -1,16 +1,20 @@
 # BackPopup.js
 
+[![npm version](https://badge.fury.io/js/backpopup.js.svg)](https://www.npmjs.com/package/backpopup.js)
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 **BackPopup.js** is a lightweight JavaScript library that shows a customizable popup when users press the browser's back button — great for last-chance offers, surveys, or exit-intent lead capture.
 
 ---
 
 ## 🚀 Features
 
-* 🔁 Triggers on browser **back button**
-* 🧠 “Don’t Show Again” using **localStorage or cookies**
-* ⚡ Smooth fade-in and pop-in animation
-* 🎯 Fully customizable: title, message, image, CTA, decline button
-* 📦 Zero dependencies, pure JavaScript
+- 🔁 Triggers on browser **back button**
+- 🧠 “Don’t Show Again” using **localStorage or cookies**
+- ⚡ Smooth fade-in and pop-in animation
+- 🎯 Fully customizable: title, message, image, CTA, decline button
+- 📦 Zero dependencies, pure JavaScript
 
 ---
 
@@ -19,13 +23,33 @@
 ### Option 1: Direct `<script>` Include
 
 ```html
-<script src="backPopup.js"></script>
+<script src="backpopup.js"></script>
 ```
 
-Alternatively, you can use the minified version for faster loading:
+Or use the minified version:
 
 ```html
-<script src="backPopup.min.js"></script>
+<script src="backpopup.min.js"></script>
+```
+
+### Option 2: Install via npm
+
+```bash
+npm install backpopup
+```
+
+#### Then use it in your JavaScript:
+
+```js
+import BackPopup from 'backpopup';
+
+BackPopup.init({
+  title: "WAIT!",
+  message: "Don't leave yet — there’s an exclusive offer waiting!",
+  ctaText: "Claim Offer",
+  ctaUrl: "https://example.com",
+  declineText: "No thanks"
+});
 ```
 
 ---
@@ -96,12 +120,6 @@ document.cookie = "backPopupDismissed=; expires=Thu, 01 Jan 1970 00:00:00 UTC; p
 * Combine with UTM parameters or cookies for **targeted campaigns**
 * Customize appearance using your own **CSS overrides**
 * Works well for **landing pages**, **checkout exits**, and **surveys**
-
----
-
-## 📸 Preview
-
-*Include a screenshot or GIF of the popup here.*
 
 ---
 

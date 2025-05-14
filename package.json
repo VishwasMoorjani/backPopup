@@ -1,0 +1,44 @@
+{
+  "name": "backpopup.js",
+  "version": "1.0.0",
+  "description": "Show customizable popups on browser back action — ideal for exit-intent offers, surveys & lead capture. Pure JavaScript, no jQuery.",
+  "keywords": [
+    "popup",
+    "back button",
+    "backpopup",
+    "exit intent",
+    "javascript popup",
+    "back button popup",
+    "lead capture",
+    "conversion",
+    "lightweight",
+    "no dependencies",
+    "vanilla js",
+    "browser popup",
+    "exit popup",
+    "modal"
+  ],
+  "homepage": "https://github.com/VishwasMoorjani/backPopup#readme",
+  "bugs": {
+    "url": "https://github.com/VishwasMoorjani/backPopup/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VishwasMoorjani/backPopup.git"
+  },
+  "license": "MIT",
+  "author": "Vishwas Moorjani",
+  "type": "module",
+  "main": "src/backpopup.js",
+  "files": [
+    "src/backpopup.js",
+    "src/backpopup.min.js"
+  ],
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "\"echo \\\"No test specified\\\" && exit 0\""
+  }
+}
