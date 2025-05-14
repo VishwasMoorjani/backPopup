@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>BackPopup.js Example</title>
+  </head>
+  <body>
+    <h1>BackPopup.js Simple Example</h1>
+    <p>If you press the back button, you'll get a warning.</p>
+
+    <script src="../src/backpopup-min.js"></script>
+    <script>
+      BackPopup.init({
+        title: "WAIT!",
+        message: "You’ve qualified to test the latest Virtually Invisible hearing aids",
+        image: "offer.jpg", // optional
+        subtext: "Answer a few short questions and claim your slot!",
+        ctaText: "Claim Your Slot",
+        ctaUrl: "offer.php",
+        declineText: "No thanks",
+        animationDuration: 300, // optional
+        useCookies: true, // enable cookie mode instead of localStorage
+        cookieExpiryDays: 7, // valid only if useCookies is true
+      });
+    </script>
+  </body>
+</html>
